@@ -335,3 +335,97 @@ section {
     padding: 8px 0;
   }
 }
+
+
+/* Accordion Item */
+.accordion-item {
+    border: 1px solid #F0DDBD !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    background-color: #FFF8E9;
+    margin-bottom: 15px;
+}
+
+/* Accordion Header */
+.accordion-button {
+    background-color: #FAE6B8;
+    color: #91451F;
+    font-weight: 600;
+    padding: 18px 22px;
+    box-shadow: none !important;
+}
+
+/* Accordion Hover */
+.accordion-button:hover {
+    background-color: #F5DCA8;
+    color: #783B1C;
+}
+
+/* Accordion Active */
+.accordion-button:not(.collapsed) {
+    background-color: #F5DCA8;
+    color: #91451F;
+    box-shadow: none;
+}
+
+/* Accordion Arrow */
+.accordion-button::after {
+    filter: sepia(1) saturate(5)
+            hue-rotate(340deg) brightness(0.7);
+}
+
+/* Accordion Body */
+.accordion-body {
+    background-color: #FFF8E9;
+    color: #684B39;
+    line-height: 1.8;
+    padding: 22px;
+}
+
+/* Bullet List */
+.accordion-body ul li::marker {
+    color: #B66A3C;
+}
+
+/* Focus */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* Responsive Accordion */
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .accordion-button {
+        padding: 16px 18px;
+        font-size: 15px;
+    }
+
+    .accordion-body {
+        padding: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .accordion-item {
+        margin-bottom: 12px;
+    }
+
+    .accordion-button {
+        padding: 14px 15px;
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .accordion-body ul {
+        padding-left: 20px;
+    }
+}
+
